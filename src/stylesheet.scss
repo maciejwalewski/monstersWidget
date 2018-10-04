@@ -1,0 +1,29 @@
+@mixin allTransition($time) {
+	transition: all $time ease-in-out;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,400');
+
+$color1: #D3CEC6;	// Main Primary color */
+$color2: #F9ECD5;
+$color3: #C3BBAE;
+$color4: #AFA593;
+$color5: #A0937D;
+
+@import './styles/flexboxgrid.css';
+@import './styles/Reset.scss';
+@import './styles/Monster.scss';
+@import './styles/RWD.scss';
+
+body {
+	font-family: 'Poppins', sans-serif;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+//IE RULES
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.widget {
+		margin: 50px 0px 25px 0px !important;
+	}
+}
