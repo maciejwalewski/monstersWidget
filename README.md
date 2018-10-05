@@ -2,4 +2,4 @@
 
 monsters widget working on online API
 
-live: 
+live: https://maciejwalewski.github.io/monstersWidget/
