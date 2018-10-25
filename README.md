@@ -1,5 +1,5 @@
 # monsters
 
-monsters widget working on online API
+Monsters widget with gh-pages API.
 
-live: https://maciejwalewski.github.io/monstersWidget/
+LIVE: https://maciejwalewski.github.io/monstersWidget/
