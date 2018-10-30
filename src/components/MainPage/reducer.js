@@ -21,21 +21,21 @@ export default function monsterReducer(
   action
 ) {
   switch (action.type) {
-    case "FETCH_MONSTERS_REQUEST":
+    case FETCH_MONSTERS_REQUEST:
       return {
         ...state,
         monstersLoading: true,
         error: null,
       };
 
-    case "FETCH_MONSTERS_SUCCESS":
+    case FETCH_MONSTERS_SUCCESS:
       return {
         ...state,
         monstersLoading: false,
         monsters: action.payload.monsters,
       };
 
-    case "FETCH_MONSTERS_ERROR":
+    case FETCH_MONSTERS_ERROR:
       return {
         ...state,
         monstersLoading: false,
@@ -43,21 +43,21 @@ export default function monsterReducer(
         error: action.payload.error,
       };
 
-    case "FETCH_EACH_MONSTER_REQUEST":
+    case FETCH_EACH_MONSTER_REQUEST:
       return {
         ...state,
         eachMonsterLoading: true,
         error: null,
       };
 
-    case "FETCH_EACH_MONSTER_SUCCESS":
+    case FETCH_EACH_MONSTER_SUCCESS:
       return {
         ...state,
         eachMonsterLoading: false,
         eachMonster: action.payload,
       };
 
-    case "FETCH_EACH_MONSTER_ERROR":
+    case FETCH_EACH_MONSTER_ERROR:
       return {
         ...state,
         eachMonsterLoading: false,
