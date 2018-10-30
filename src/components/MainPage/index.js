@@ -1,1 +1,2 @@
-export { default as MainPage } from './container/MainPage';
+export { default as MainPage } from './components/MainPage';
+export { default as Navigation } from './container/Navigation';

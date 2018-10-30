@@ -10,12 +10,16 @@ export const fetchMonstersRequest = () => ({
 
 export const fetchMonstersSuccess = monsters => ({
   type: FETCH_MONSTERS_SUCCESS,
-  payload: { monsters },
+  payload: {
+    monsters
+  },
 });
 
 export const fetchMonstersError = error => ({
   type: FETCH_MONSTERS_ERROR,
-  payload: { error },
+  payload: {
+    error
+  },
 });
 
 export function fetchMonsters() {
@@ -50,7 +54,9 @@ export const fetchEachMonsterSuccess = monster => ({
 
 export const fetchEachMonsterError = error => ({
   type: FETCH_EACH_MONSTER_ERROR,
-  payload: { error },
+  payload: {
+    error
+  },
 });
 
 export function fetchEachMonster(monster) {

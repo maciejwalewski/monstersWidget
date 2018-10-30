@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 
 import Monster from '../components/Monster';
 
@@ -9,8 +8,10 @@ const mapStateToProps = state => {
 	};
 };
 
-const mapDispatchToProps = dispatch => bindActionCreators({
-}, dispatch);
+const mapDispatchToProps = dispatch => {
+	return {
 
+	};
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Monster);

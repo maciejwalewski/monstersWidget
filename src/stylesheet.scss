@@ -4,7 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,400');
 
-$color1: #D3CEC6;	// Main Primary color */
+$color1: #D3CEC6; // Main Primary color */
 $color2: #F9ECD5;
 $color3: #C3BBAE;
 $color4: #AFA593;
@@ -22,7 +22,8 @@ body {
 }
 
 //IE RULES
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
 	.widget {
 		margin: 50px 0px 25px 0px !important;
 	}

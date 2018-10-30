@@ -1,19 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
-
+import React from "react";
+import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 class DelayLink extends React.Component {
   static propTypes = {
-    delay:        PropTypes.number,
+    delay: PropTypes.number,
     onDelayStart: PropTypes.func,
-    onDelayEnd:   PropTypes.func
+    onDelayEnd: PropTypes.func
   };
 
   static defaultProps = {
-    delay:        0,
+    delay: 0,
     onDelayStart: () => {},
-    onDelayEnd:   () => {}
+    onDelayEnd: () => {}
   };
 
   static contextTypes = Link.contextTypes;
@@ -34,7 +33,7 @@ class DelayLink extends React.Component {
    *
    * @param {Event} e
    */
-  handleClick = (e) => {
+  handleClick = e => {
     const { replace, to, delay, onDelayStart, onDelayEnd } = this.props;
     const { history } = this.context.router;
 
@@ -60,9 +59,7 @@ class DelayLink extends React.Component {
     delete props.onDelayStart;
     delete props.onDelayEnd;
 
-    return (
-      <Link {...props} onClick={this.handleClick} />
-    );
+    return <Link {...props} onClick={this.handleClick} />;
   }
 }
 
